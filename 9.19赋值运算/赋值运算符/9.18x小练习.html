@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" id="d">
+    <script>
+       var d = document.getElementById('d');
+       var nw = confirm('女王请点击确定');
+       console.log(nw);                                
+       d.oninput = function(){
+           if (d == (2019/03/08)) {
+               alert('五折')
+           } else {
+            alert('不打折')
+           }
+       }
+    </script>   
+    
+</body>
+</html>
