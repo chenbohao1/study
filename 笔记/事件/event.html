@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <SCRipt>
+    //事件触发时  调用的函数（event）
+    document.onclick=function(e){
+        //非ie浏览器   低版本ie
+        var ev=e || window.event;
+        console.log(ev.clientX);
+    }
+    </SCRipt>
+</body>
+</html>

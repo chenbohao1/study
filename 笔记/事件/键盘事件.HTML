@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                position: relative;
+            }
+            img{
+              width: 200px;
+              display: block;
+              position: absolute;
+              margin-left: 60px;
+            }
+        </style>
+   </head>
+   <body>
+       <img src="1.jpg" alt="" id="img">
+        <script>
+            document.onkeydown=function(e){
+               //  alert(e.keyCode);
+               //37 左
+               //38 上
+               //39 右
+               //40 下
+               switch(e.keyCode){
+                   case 37:img.style.left='90px';
+                   a++;
+                   break;
+                   case 38:img.style.top='90px';
+                   w++;
+                   break; 
+                   case 39:img.style.right='90px';
+                   d++;
+                   break;
+                //    case 40:img.style.='90px';
+                //    a++;
+                //    break;
+                  
+               }
+            }
+            document.onkeyup=function(){
+                alert('11111')
+            }
+        </script>
+   
+</body>
+</html>

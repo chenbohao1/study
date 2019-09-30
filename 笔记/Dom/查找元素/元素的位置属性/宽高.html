@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style >
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100px;
+            height:100px;
+            margin: 10px;
+            background-color:red;
+            margin: 100px auto;
+            border: 1px solid blue;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+     var mydiv=document.getElementById('mydiv')
+     console.log(mydiv.style);//这种只能拿到内联样式
+     console.log(mydiv.offsetWidth);
+    </script>
+</body>
+</html>

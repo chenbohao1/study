@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <b id="a">你好</b>;
+    <script>
+      var b=document.getElementById('a');
+       console.log(b.tagName);
+       //方法一
+       //那些标签是加粗的h1~h6,b,strong
+       //H1||H2||H3||H4||H5||H6||B||STRONG
+       if(b.tagName=='H1'||b.tagName=='H2'||b.tagName=='H3'||b.tagName=='H4'||b.tagName=='H5'||b.tagName=='H6'||b.tagName=='B'||b.tagName=='STRONG'){
+          b.style.fontWeight=400;//可也直接使用这个改变粗细
+       }
+
+       //方法二:
+       //不管是不是粗体,统一为细体
+       b.style.fontWeight=400;//可也直接使用这个改变粗细
+
+       //方法三:
+         var arr=['H1','H2','H3','H4','H5','H6','B','STRONG'];
+          console.log( arr.indexOf('DIV'))
+         //检查数组是否有加粗标签名,返回-1以外的都是粗体
+         var isTure=arr.indexOf(b.tagName);//检查数组是否有需要的内容
+         console.log(isTure)
+         //判断如果是粗体签名,就改变样式
+         if(isTure!=-1){
+             b.style.fontWeight=200;
+             b.style.color="red";
+         }
+    </script>
+</body>
+</html>

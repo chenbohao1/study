@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+         <ul id='ul'>
+                <li class="a">1</li>
+                <li class="a">2</li>
+                <li class="b">3</li>
+                <li id="c">4</li> 
+            </ul> 
+            <div id="div">
+                <div>
+                    <span>
+                        <a href="#">wwww</a>
+                    </span>
+                    <div></div>
+                </div>
+           </div>
+            <script>
+                // 方法一
+               
+                // var a=document.querySelector('.a');//输入 必须确定他是#还是.选择
+                // console.log(a);
+                //方法二
+                 var ul =document.getElementById('ul');
+                 var x=document.querySelector('#div>div>span a');
+                 var lis= ul.querySelectorAll('li'); //得到所有
+                 console.log(ul)
+                 console.log(x);
+                 console.log(lis);
+
+            </script>
+</body>
+</html>
