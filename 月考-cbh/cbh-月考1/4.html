@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>计算任意两数字的和</title>
+</head>
+<body>    
+    <div id="show"></div>
+    <input id="input1" type="text"/>&nbsp;+&nbsp;
+    <input id="input2" type="text"/>&nbsp;=&nbsp;
+    <input id="input3" type="text"/>
+    <button id="bun" onclick="But()">计算<button>
+    <script>
+        alert('请输入整数进行计算')
+        function But(){
+           var input1 = document.getElementById('input1').value;
+           var input2 = document.getElementById('input2').value;
+           document.getElementById('input3').value=parseInt(Number(input1))+parseInt(Number(input2));
+        }   
+    </script>
+</body>
+<html>
